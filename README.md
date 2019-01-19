@@ -1,4 +1,4 @@
-# LSWA: An Open Source MATLAB Software Package for Time/Data Series Analysis
+# LSWAVE: An Open Source MATLAB Software Package for Time/Data Series Analysis
 
 
 # Includes:
