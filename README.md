@@ -12,7 +12,7 @@
 
 # The codes are developed by Ebrahim Ghaderpour, the corresponding author of the paper entitled:
 
-# "LSWAVE: A MATLAB software for the least-squares wavelet and cross-wavelet analyses"
+# "LSWAVE: a MATLAB software for the least-squares wavelet and cross-wavelet analyses"
 
 # written by Ebrahim Ghaderpour and Spiros D. Pagiatakis
 
