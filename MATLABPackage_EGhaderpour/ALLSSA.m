@@ -83,7 +83,7 @@ LOm=length(Omega);
 % The following while loop estimates the cyclic frequencies (corresponding 
 % to statistically significant peaks) after one round of iterations
 while check && norm(g)>1e-6
-    [spectrum, ~, ~, g, xhat, COVcoeff, ~]=...
+    [spectrum, ~, ~, g, ~, COVcoeff, ~]=...
         LSSA(t, f, P, Omega, Q, IndexDatum, alpha, true);
     Q1=Q;
     Om_inds=find(spectrum==max(spectrum(:)));
@@ -140,6 +140,8 @@ while check && norm(g)>1e-6
 
 end
 %--------------------------------------------------------------------------
+[~, ~, ~, g, xhat, COVcoeff, ~]=...
+        LSSA(t, f, P, [], Q, IndexDatum, alpha, true);
 % separate the sinusoidal coefficients from trend coefficients (optional)
 Lid=length(IndexDatum);
 if Q(1)==1
