@@ -3318,7 +3318,7 @@ if isfield(handles,'LSSA_CosSin')
         LSSA_Est{j+1,9}=FW(j);
         c=LSSA_CosSin(2*j-1); s=LSSA_CosSin(2*j); 
         ce=sqrt(LSSA_COVcoeff(k,k)); se=sqrt(LSSA_COVcoeff(k+1,k+1));
-        cse=sqrt(LSSA_COVcoeff(k,k+1));
+        cse=LSSA_COVcoeff(k,k+1);
         LSSA_Est{j+1,10}=c;
         LSSA_Est{j+1,11}=ce;
         LSSA_Est{j+1,12}=s;
@@ -3332,7 +3332,7 @@ if isfield(handles,'LSSA_CosSin')
             c=1e-7;
         end
         phaseE=2*sqrt(((s/c)*(amp-s))^2*ce^2+(s-amp)^2*se^2-2*(s/c)*(amp-s)^2*cse)/(abs(amp*c)*(1+(amp-s)^2/c^2));
-        LSSA_Est{j+1,17}= phaseE;
+        LSSA_Est{j+1,17}= mod(phaseE,2*pi);
         k=k+2;
     end
 end
@@ -3614,7 +3614,7 @@ if isfield(handles,'SpecCosSin')
         ALLSSA_Est{j+1,9}=FW(j);
         c=ALLSSA_CosSin(2*j-1); s=ALLSSA_CosSin(2*j);
         ce=sqrt(ALLSSA_COVcoeff(k,k)); se=sqrt(ALLSSA_COVcoeff(k+1,k+1));
-        cse=sqrt(ALLSSA_COVcoeff(k,k+1));
+        cse=ALLSSA_COVcoeff(k,k+1);
         ALLSSA_Est{j+1,10}=c;
         ALLSSA_Est{j+1,11}=ce;
         ALLSSA_Est{j+1,12}=s;
@@ -3628,7 +3628,7 @@ if isfield(handles,'SpecCosSin')
             c=1e-7;
         end
         phaseE=2*sqrt(((s/c)*(amp-s))^2*ce^2+(s-amp)^2*se^2-2*(s/c)*(amp-s)^2*cse)/(abs(amp*c)*(1+(amp-s)^2/c^2));
-        ALLSSA_Est{j+1,17}= phaseE;
+        ALLSSA_Est{j+1,17}= mod(phaseE,2*pi);
         k=k+2;
     end
 end
