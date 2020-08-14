@@ -196,7 +196,7 @@ end
 % -------------------------------------------------------------------------
 % Calculate the least-squares spectrum (LSS)
 for k=1:LOm
-      if ~any(Omega(k)==QQ)
+      if ~any(round(Omega(k),6)==round(QQ,6))
           Phi(:,1) = cos(2*pi*Omega(k)*t);
           Phi(:,2) = sin(2*pi*Omega(k)*t);
           if nrow==1 && ncol==1 % If the series is equally weighted
