@@ -1273,6 +1273,8 @@ if LSWSorLSCWSstoch==1
     UB=stochastic(LOm, floor(LT/2))*100;
     if UB>LB
         caxis([LB UB+0.1*(UB-LB)]);
+    else
+        caxis([LB-0.1 max(max(stochastic))*100+0.1]);
     end
     colormap(handles.axes4,gray);
     ylabel(cb, 'Critical percentage variance (%)','fontsize',10);
@@ -1286,6 +1288,8 @@ elseif LSWSorLSCWSstoch==2
     UB=xstochastic(LOm, floor(LT/2));
     if UB>LB
         caxis([LB UB+0.1*(UB-LB)]);
+    else
+        caxis([LB-0.1 max(max(xstochastic))+0.1]);
     end
     colormap(handles.axes4,gray);
     ylabel(cb, 'Critical percentage variance (%)','fontsize',10);
