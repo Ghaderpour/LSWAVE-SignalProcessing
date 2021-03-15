@@ -1,13 +1,12 @@
 JUST (Jumps Upon Spectrum and Trend)
 
 The files with names JUST_MATLABPackage_EGhaderpour 
-and JUST_PythonPackage_EGhaderpour contain respectively the MATLAB code and Python Code for
-
-JUST: An Open Source MATLAB Software Package for Change Detection and Time Series Analysis
+and JUST_PythonPackage_EGhaderpour contain respectively 
+the MATLAB code and Python Code for JUST.
 
 Published in GPS Solutions (Toolbox)  https://geodesy.noaa.gov/gps-toolbox/JUST.htm
 
-Includes:
+The JUST package includes:
 
              LSSA - Least-Squares Spectral Analysis (LSSA)
            ALLSSA - Antileakage Least-Squares Spectral Analysis (ALLSSA)
@@ -26,7 +25,7 @@ LSWAVE: An Open Source MATLAB Software Package for Time/Data Series Analysis
 
 Published in GPS Solutions (Toolbox)  https://www.ngs.noaa.gov/gps-toolbox/LSWAVE.htm
 
-Includes:
+The LSWAVE MATLAB package includes:
 
          LSSA - Least-Squares Spectral Analysis (LSSA)
        ALLSSA - Antileakage Least-Squares Spectral Analysis (ALLSSA)
