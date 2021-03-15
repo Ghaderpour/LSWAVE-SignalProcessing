@@ -1,5 +1,5 @@
 # Software Packages for Change Detection and Time Series Analysis
-# By Ebrahim Ghaderpour  Copyright @2021
+# By Ebrahim Ghaderpour  Copyright 2019-2021
 
 JUST (Jumps Upon Spectrum and Trend)
 
