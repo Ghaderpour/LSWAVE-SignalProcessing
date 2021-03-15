@@ -11,7 +11,7 @@ In Python:
 The Python code can be run individually and the examples with their descriptions 
 are given in the scripts (after if __name__ == '__main__':)
 
-The supported format for the data sets are .csv, .dat, and .txt
+The supported formats for the data sets are .csv, .dat, and .txt
 Each module imports argparse and can be easily run from the Command Prompt (Fully commented)
 
 Use two consecutive hyphens -- for each input parameter
