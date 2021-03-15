@@ -7,6 +7,8 @@ Copyright @2021
 Published in GPS Solutions (Springer)
 Also available at https://geodesy.noaa.gov/gps-toolbox/JUST.htm
 
+Please acknowledge my papers describing the software in your work 
+
 To run each script in the MATLAB Command Window first load a time series. 
 There are several time series included in this package in .dat format 
 whose first, second, and third columns are the times, time series values, and weights.
