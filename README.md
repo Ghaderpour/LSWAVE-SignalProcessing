@@ -1,4 +1,4 @@
-#Software Packages for Change Detection and Time Series Analysis
+# Software Packages for Change Detection and Time Series Analysis
 
 JUST (Jumps Upon Spectrum and Trend)
 
