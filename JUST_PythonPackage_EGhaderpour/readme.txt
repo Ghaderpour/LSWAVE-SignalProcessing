@@ -49,7 +49,7 @@ Users may also suppress the annual peaks in the spectrogram (1 c/y) by adding --
 In cases where the matrix of normal equations becomes singular (singularity error), users may change/alter the window size parameters
 i.e., by adding --L0 5 to the command as an example 
 
-The full description of parameters is available from Prompt Command using pydoc:
+The full description of parameters is available from the Command Prompt using pydoc:
 
 Example:
 
