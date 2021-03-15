@@ -5,8 +5,7 @@ emails: ebrahim.ghaderpour@ucalgary.ca
 There are several time series included in this package in .dat and one in .csv and one in .txt format
 whose first, second, and third columns are the times, time series values, and weights.
 
-----------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------------
 In Python: 
 
 The Python code can be run individually and the examples with their descriptions 
@@ -46,8 +45,8 @@ D:\JUST>python LSWA.py --data "D:\JUST\EVIA_CA.txt" --ind 13 111 144 --Lfreq 0.2
 
 This should display the amplitude spectrogram. The cyclic frequencies are in cycles per year (c/y).
 Users may also suppress the annual peaks in the spectrogram (1 c/y) by adding --freq 1 in the command above.
-In cases where the matrix of normal equations becomes singular (singularity error), users may change/alter the window size parameters
-i.e., by adding --L0 5 to the command as an example 
+In cases where the matrix of normal equations becomes singular (singularity error), 
+users may change/alter the window size parameters, i.e., by adding --L0 5 to the command as an example 
 
 The full description of parameters is available from the Command Prompt using pydoc:
 
@@ -55,7 +54,7 @@ Example:
 
 D:\JUST>python -m pydoc JUSTmonitor
 
--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Sources of the examples included in this package:
 
@@ -75,8 +74,7 @@ sim_Geophysics.dat is the same simulated example in
 https://doi.org/10.1190/geo2017-0284.1
 True wavenumbers are 4.0744, 20.3718, 22.2818 achieved by setting 'decimal' to 4 in ALLSSA 
 
--------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------------
 To compute the cross-spectrogam for two time series: (t1, f1, P1) and (t2, f2, P2)
 Users may select a common time vector tt for both time series and run LSWA for 
 each time series by inputting tt = tt to compute a normalized spectrogram. 
@@ -90,7 +88,7 @@ a = max (t1[0], t2[0])
 b = min (t1[len(t1)-1], t2(len[t2-1]))
 tt = numpy.linspace(a, b, num) 
 
--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 
 While the software has been tested and debugged using thousands of time series, 
 users may still see some bugs for certain time series and inputs. 
