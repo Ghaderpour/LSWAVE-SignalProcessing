@@ -79,16 +79,16 @@ True wavenumbers are 4.0744, 20.3718, 22.2818 achieved by setting 'decimal' to 4
 
 To compute the cross-spectrogam for two time series: (t1, f1, P1) and (t2, f2, P2)
 Users may select a common time vector tt for both time series and run LSWA for 
-each time series by inputting 'tt' = tt to compute a normalized spectrogram. 
+each time series by inputting tt = tt to compute a normalized spectrogram. 
 Then multiply the normalized spectrograms entrywise to obtain the cross-spectrogram!
 (Reference: https://doi.org/10.1007/s00190-018-1156-9)
 
 Example:
 
 A common time vector tt (equally spaced) for both time series may be obtained by:
-a = max (t1(1), t2(1));
-b = min (t1(length(t1)), t2(length(t2)));
-tt = linspace(a, b, num);  
+a = max (t1[0], t2[0])
+b = min (t1[len(t1)-1], t2(len[t2-1]))
+tt = numpy.linspace(a, b, num) 
 
 -------------------------------------------------------------------------------------------
 
