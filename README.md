@@ -4,9 +4,13 @@ The files with names
 and
 # JUST_PythonPackage_EGhaderpour 
 contain respectively the MATLAB code and Python Code for
+
 JUST: An Open Source MATLAB Software Package for Change Detection and Time Series Analysis
-GPS Solutions (Toolbox)  https://geodesy.noaa.gov/gps-toolbox/JUST.htm
+
+Published in GPS Solutions (Toolbox)  https://geodesy.noaa.gov/gps-toolbox/JUST.htm
+
 Includes:
+
          LSSA - Least-Squares Spectral Analysis (LSSA)
        ALLSSA - Antileakage Least-Squares Spectral Analysis (ALLSSA)
          LSWA - Least-Squares Wavelet Analysis (LSWA)
@@ -18,9 +22,13 @@ JUSTdecompose - JUST Decomposition into Trend, Seasonal, and Remainder Component
 
 # LSWAVE (Least-Squares Wavelet)
 The file with name MATLABPackage_EGhaderpour contains the MATLAB code for
+
 LSWAVE: An Open Source MATLAB Software Package for Time/Data Series Analysis
-GPS Solutions (Toolbox)  https://www.ngs.noaa.gov/gps-toolbox/LSWAVE.htm
+
+Published in GPS Solutions (Toolbox)  https://www.ngs.noaa.gov/gps-toolbox/LSWAVE.htm
+
 Includes:
+
          LSSA - Least-Squares Spectral Analysis (LSSA)
        ALLSSA - Antileakage Least-Squares Spectral Analysis (ALLSSA)
          LSWA - Least-Squares Wavelet Analysis (LSWA)
