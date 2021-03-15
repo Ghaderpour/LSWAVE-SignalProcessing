@@ -71,15 +71,9 @@ You may run JUSTmonitor by inputting the values for 'history' and 'start' as lis
     history                  17             30             15
      start                   72             71             71
 
-
-
 sim_Geophysics.dat is the same simulated example in 
 https://doi.org/10.1190/geo2017-0284.1
 True wavenumbers are 4.0744, 20.3718, 22.2818 achieved by setting 'decimal' to 4 in ALLSSA 
-
-
-Sim_JumpInd_101_321.dat is the same simulated example in 
-https://doi.org/10.1007/s10291-019-0841-3
 
 -------------------------------------------------------------------------------------------
 
