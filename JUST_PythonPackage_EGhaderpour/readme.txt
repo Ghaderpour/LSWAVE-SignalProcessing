@@ -59,7 +59,7 @@ D:\JUST>python -m pydoc JUSTmonitor
 
 Sources of the examples included in this package:
 
-Sim_JumpInd_48_104.dat, ExA_NDVI_Australia.dat, ExB_NDVI_Australia.dat, 
+ExA_NDVI_Australia.dat, ExB_NDVI_Australia.dat, 
 EVIA_CA.dat, EVIB_CA.dat, and EVIC_CA.dat are in https://doi.org/10.3390/rs12234001
 
 
