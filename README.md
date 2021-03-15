@@ -1,3 +1,5 @@
+#Software Packages for Change Detection and Time Series Analysis
+
 JUST (Jumps Upon Spectrum and Trend)
 
 The files with names JUST_MATLABPackage_EGhaderpour 
@@ -19,9 +21,7 @@ The JUST package includes:
 
 LSWAVE (Least-Squares Wavelet)
 
-The file with name MATLABPackage_EGhaderpour contains the MATLAB code for
-
-LSWAVE: An Open Source MATLAB Software Package for Time/Data Series Analysis
+The file with name MATLABPackage_EGhaderpour contains the MATLAB code for LSWAVE
 
 Published in GPS Solutions (Toolbox)  https://www.ngs.noaa.gov/gps-toolbox/LSWAVE.htm
 
