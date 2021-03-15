@@ -68,8 +68,8 @@ For near-real-time monitoring, the following three time series are shown in http
  
 You may run JUSTmonitor by inputting the values for 'history' and 'start' as listed below:
   Time series            EVIA_AB.dat    EVIB_AB.dat    EVIC_AB.dat 
-   'history'                 17             30             15
-    'start'                  72             71             71
+    history                  17             30             15
+     start                   72             71             71
 
 
 
