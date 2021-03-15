@@ -9,7 +9,7 @@ whose first, second, and third columns are the times, time series values, and we
 
 In Python: 
 
-The Python codes can be run individually and the examples with their descriptions 
+The Python code can be run individually and the examples with their descriptions 
 are given in the scripts (after if __name__ == '__main__':)
 
 The supported format for the data sets are .csv, .dat, and .txt
