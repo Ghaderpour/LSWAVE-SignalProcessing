@@ -30,7 +30,7 @@ Ebrahim Ghaderpour:     ebig2@yorku.ca   or   ebrahimg2@gmail.com
 Spiros D. Pagiatakis:       spiros@yorku.ca
 
 
-GPS Solutions (Tool Box)
+GPS Solutions (Toolbox)
 
 
 
