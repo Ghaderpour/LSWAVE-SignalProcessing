@@ -68,10 +68,9 @@ For near-real-time monitoring, the following three time series are shown in http
  
 You may run JUSTmonitor by inputting the values for 'history' and 'start' as listed below:
   Time series            EVIA_AB.dat    EVIB_AB.dat    EVIC_AB.dat 
-   'history'                 18             31             16
-    'start'                  73             72             72
+   'history'                 17             30             15
+    'start'                  72             71             71
 
-Note: These indices are for MATLAB. For Python, 1 should be subtracted from each of them.
 
 
 sim_Geophysics.dat is the same simulated example in 
