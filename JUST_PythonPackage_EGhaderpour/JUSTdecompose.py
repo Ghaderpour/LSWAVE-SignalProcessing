@@ -155,12 +155,14 @@ def JUSTdecompose(t, f, P = 1, tt = [], size = None, step = None, season = 'ALLS
     Ltt = len(tt)       
     #--------- Window Size ----------------------------------------------------------------
     M = int(Ltt/(tt[Ltt-1]-tt[0]))        # A simple estimate for sampling rate
-    if size != None and (size > Ltt or size < M):
-        raise ValueError("The window size must be an integer between M and n")
+    if size != None:
+        if (size > Ltt or size < M):
+            raise ValueError("The window size must be an integer between M and n")
     else: size = 3*M
     #--------- Translation Step -----------------------------------------------------------
-    if step != None and (step >= size or step < 1):
-        raise ValueError("Translation step must be a positive integer less than size")
+    if step != None:
+        if (step >= size or step < 1):
+            raise ValueError("Translation step must be a positive integer less than size")
     else: step = M
     #--------- Set of Cyclic Frequencies --------------------------------------------------
     if len(Omega) == 0:

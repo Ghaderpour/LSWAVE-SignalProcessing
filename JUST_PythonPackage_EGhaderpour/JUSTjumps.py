@@ -146,12 +146,14 @@ def AllJumps(t, f, P = 1, size = None, step = None, season = 'ALLSSA', Omega = [
         raise ValueError("Weight matrix must be a square matrix of order n") 
     #--------- Window Size ----------------------------------------------------------------
     M = int(Lt/(t[Lt-1]-t[0]))        # A simple estimate for sampling rate
-    if size != None and (size > Lt or size < M):
-        raise ValueError("The window size must be an integer between M and n")
+    if size != None:
+        if (size > Lt or size < M):
+            raise ValueError("The window size must be an integer between M and n")
     elif size == None: size = 3*M
     #--------- Translation Step -----------------------------------------------------------
-    if step != None and (step >= size or step < 1):
-        raise ValueError("Translation step must be a positive integer less than size")
+    if step != None:
+        if (step >= size or step < 1):
+            raise ValueError("Translation step must be a positive integer less than size")
     else: step = M
     #--------- Set of Cyclic Frequencies --------------------------------------------------
     if len(Omega) == 0:
@@ -249,12 +251,14 @@ def JUSTjumps(t, f, P = 1, size = None, step = None, season = 'ALLSSA', Omega = 
         raise ValueError("Weight matrix must be a square matrix of order n") 
     #--------- Window Size ----------------------------------------------------------------
     M = int(Lt/(t[Lt-1]-t[0]))        # A simple estimate for sampling rate
-    if size != None and (size > Lt or size < M):
-        raise ValueError("The window size must be an integer between M and n")
+    if size != None:
+        if (size > Lt or size < M):
+            raise ValueError("The window size must be an integer between M and n")
     elif size == None: size = 3*M
     #--------- Translation Step -----------------------------------------------------------
-    if step != None and (step >= size or step < 1):
-        raise ValueError("Translation step must be a positive integer less than size")
+    if step != None:
+        if (step >= size or step < 1):
+            raise ValueError("Translation step must be a positive integer less than size")
     else: step = M
     #--------- Set of Cyclic Frequencies --------------------------------------------------
     if len(Omega) == 0:
