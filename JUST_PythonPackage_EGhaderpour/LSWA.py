@@ -306,22 +306,22 @@ if __name__ == '__main__':
         else: Ltim = args.Ltime
         if args.Utime == 0: Utim = t[len(t)-1]
         else: Utim = args.Utime
-        tt = np.linspace(Ltim, Utim, args.Numtime)
+        tt = np.linspace(Ltim, Utim,int(args.Numtime))
     else: tt = []
     
     if args.Ufreq > 0 and args.Numfreq > 0:
-        Omega = np.linspace(args.Lfreq, args.Ufreq, args.Numfreq)
+        Omega = np.linspace(args.Lfreq, args.Ufreq,int(args.Numfreq))
     else: Omega = []  
     
     t0  = t - t[0]   # For the sake of computational efficiency
     if len(tt) > 0: tt0 = tt - t[0]   # For the sake of computational efficiency 
     else: tt0 = []
     
-    tic = time.clock()     
+    tic = time.time()     
     Results = LSWA(t0, f, P = P, tt = tt0, rate = args.rate, Omega = Omega, ind = args.ind, 
                    level = args.level, trend = args.trend, slope = args.slope, freq = args.freq, 
                    L1 = args.L1, L0 = args.L0, morlet = args.morlet)
-    toc = time.clock()
+    toc = time.time()
     print("Computational Time: ", round(toc-tic,2), "s") 
     # Select larger window size parameters (e.g., L0 = 5) if you got the following error: 
     # 'The size of the time series (segment) is too small!'
