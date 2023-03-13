@@ -211,10 +211,10 @@ if __name__ == '__main__':
     
     t0  = t - t[0]   # For the sake of computational efficiency
     
-    tic = time.clock()     
+    tic = time.time()     
     Results = ALLSSA(t0, f, P = P, Omega = Omega, ind = args.ind, level = args.level, 
                    trend = args.trend, slope = args.slope, decimal = args.decimal)
-    toc = time.clock()
+    toc = time.time()
     print("Computational Time: ", round(toc-tic,2), "s") 
     freq = Results[5]
     print("The ALLSSA estimated cyclic frequencies:", freq)
