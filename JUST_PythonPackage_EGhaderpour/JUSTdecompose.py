@@ -384,18 +384,18 @@ if __name__ == '__main__':
     elif Dim[1] == Dim[0] + 2: P = tfP[:,2:]
     else: P = 1
     
-    if args.Numtime > 0: tt = np.linspace(t[0], t[len(t)-1], args.Numtime)
+    if args.Numtime > 0: tt = np.linspace(t[0], t[len(t)-1], int(args.Numtime))
     else: tt = [] 
     
     if args.Ufreq > 0 and args.Numfreq > 0:
         Omega = np.linspace(args.Lfreq, args.Ufreq, args.Numfreq)
     else: Omega = []
     
-    tic = time.clock()    
+    tic = time.time()    
     Results = JUSTdecompose(t, f, P = P, tt = tt, size = args.size, step = args.step, 
                         season = args.season, Omega = Omega, ind = args.ind,  
                         level = args.level)        
-    toc = time.clock()
+    toc = time.time()
     print("Computational Time: ", round(toc-tic,2), "s")     
     
     # Save the results as .csv 
